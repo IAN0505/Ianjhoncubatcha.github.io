@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 19px 12%;
+    background: rgb(2, 2, 2);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+}
+.logo{
+    font-size: 25px;
+    color: aqua;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.logo:hover{
+    color: aqua;
+    text-shadow: 0 0 55px rgb(255, 0, 0),
+                 0 0 50px rgb(255, 0, 0);
+    transform: scale(1.1);
+}
+span{
+    color: white;
+}
+span:hover{
+    color: aqua;
+    transform: scale(1.1);
+}
+
+.navbar a{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 25px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: aqua;
+    border-bottom: 3px solid aqua;
+    text-decoration: none;
+    transform: scale(1.1);
+    
+    
+}
+
+.contact{
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.contact:hover{
+    background-color: aqua;
+    box-shadow: aqua;
+    color: white;
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+    margin-top: 20px;
+}
+.home-concent{
+    max-width: 800px;
+}
+.home-concent h3{
+    font-size: 42px;
+}
+.home-concent h1{
+    font-size: 62px;
+    line-height: 1.2;
+}
+.home-concent p{
+    font-size: 18px;
+    margin: 25px 0 30px;
+}
+.btn-box{
+    width: 345px;
+    display: flex;
+    gap: 2em;
+}
+.btn-1{
+    padding: 15px 28px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3 ease;
+    cursor: pointer;
+}
+
+.btn-1:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+.btn-2{
+    padding: 15px 28px;
+    background-color: aqua;
+    color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-2:hover{
+    background-color: white;
+    color: aqua;
+}
+.img-box img{
+    border-radius: 50%;
+    width: 450px;
+    height: 80vh;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: aqua;
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 6);
+    width: 50px;
+}
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background: black;
+}
+
+.about-img img {
+    position: relative;
+    width: 450px;
+    box-shadow: 0 0 25px rgb(155, 0, 0),
+                 0 0 20px rgb(155, 0, 0);
+    border-radius: 50%;
+    height: 80vh;
+}
+
+.about-content h2 {
+    text-align: start;
+    color: white;
+    font-size: 42px;
+}
+
+.about-content h3 {
+    font-size: 62px;
+    color: white;
+}
+
+.about-content p {
+    color: white;
+    font-size: 20px;
+    margin: 2em 0 3em;
+}
+.project-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px
+}
+
+.project-link {
+    text-decoration: none;
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #ddd;
+}
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    gap: 100px;
+    
+    
+}
+.contact-form h2{
+    margin-bottom: 10%;
+     
+    display: block;
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-group textarea {
+    height: 100px;
+}
+.form-group button {
+    padding: 10px 20px;
+    background-color: aqua;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid black;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+
+}
+.form-group button:hover {
+    background-color: white;
+    cursor: pointer;
+}
